@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+     #typed-text {
+      font-size: 2rem;
+      margin-top: 50px;
+      border-right: 2px solid orange;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+	<%@ include file="Header.jsp"%>
+	<h1 align="center">Online Result system</h1>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<%
+		String msg = (String) request.getAttribute("msg");
+	%>
+	<%
+		if (msg != null) {
+	%>
+	<h3 align="center"><%=msg%></h3>
+	<%
+		}
+	%>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1 align="center">
+  
+  <div id="typed-text"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed-text', {
+      strings: ["Welcome"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+	 
+  </h1>
+
+</body>
+</html>

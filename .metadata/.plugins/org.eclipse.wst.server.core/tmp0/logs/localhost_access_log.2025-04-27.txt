@@ -1,0 +1,12 @@
+127.0.0.1 - - [27/Apr/2025:15:52:10 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:52:11 +0530] "GET /Web-Project/ HTTP/1.1" 200 342
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:52:11 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:52:19 +0530] "GET /Web-Project/WelcomeCtl HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:52:19 +0530] "GET /Web-Project/WelcomeView.jsp HTTP/1.1" 200 823
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:52:24 +0530] "GET /Web-Project/LoginCtl HTTP/1.1" 200 907
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:52:36 +0530] "POST /Web-Project/LoginCtl HTTP/1.1" 200 932
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:52:51 +0530] "GET /Web-Project/UserListCtl HTTP/1.1" 200 4933
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:53:07 +0530] "POST /Web-Project/UserListCtl HTTP/1.1" 200 4682
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:53:13 +0530] "POST /Web-Project/UserListCtl HTTP/1.1" 200 4439
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:53:41 +0530] "POST /Web-Project/UserListCtl HTTP/1.1" 200 4192
+0:0:0:0:0:0:0:1 - - [27/Apr/2025:15:57:01 +0530] "POST /Web-Project/UserListCtl HTTP/1.1" 200 4192

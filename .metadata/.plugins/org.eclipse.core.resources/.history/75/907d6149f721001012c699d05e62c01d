@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<%@ include file="Header.jsp"%>
+	<h1 align="center">Online Result system</h1>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<%
+		String msg = (String) request.getAttribute("msg");
+	%>
+	<%
+		if (msg != null) {
+	%>
+	<h3 align="center"><%=msg%></h3>
+	<%
+		}
+	%>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1 align="center">
+	body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+}
+
+.welcome-text {
+  font-size: 3em;
+  color: #00ffd9;
+  white-space: nowrap;
+  transform: translateX(-100%);
+  animation: slideIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+  }
+}
+  </h1>
+
+</body>
+</html>

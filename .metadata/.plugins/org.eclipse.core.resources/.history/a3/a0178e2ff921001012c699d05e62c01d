@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1 align="center">
+		<h2>Welcome to my website-Project</h2>
+		<br>
+		<br>
+		<br>
+		<div class="fade-text">
+			<a href="WelcomeCtl">click Here To Enter</a>
+		</div>
+	</h1>
+	
+</body>
+</html>

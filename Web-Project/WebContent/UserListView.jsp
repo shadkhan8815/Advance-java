@@ -1,0 +1,65 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<%@ include file="Header.jsp"%>
+	<form action="UserListCtl" method="post">
+
+		<h1 align="center">USER LIST</h1>
+		<%
+			List list = (List) request.getAttribute("list");
+		%>
+		<center>
+			<table border="1px" width="100%">
+
+				<tr style="background-color: skyblue">
+					<th>Select</th>
+					<th>Id</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>LoginId</th>
+					<th>DOB</th>
+					<th>Address</th>
+				</tr>
+
+				<%
+					Iterator it = list.iterator();
+
+					while (it.hasNext()) {
+						UserBean bean = (UserBean) it.next();
+				%>
+				<tr align="center">
+					<td><input type="checkbox" value="<%=bean.getId()%>"
+						name="ids"></td>
+					<td><%=bean.getId()%></td>
+					<td><%=bean.getFirstName()%></td>
+					<td><%=bean.getLastName()%></td>
+					<td><%=bean.getLoginId()%></td>
+					<td><%=bean.getDob()%></td>
+					<td><%=bean.getAddress()%></td>
+				</tr>
+				<%
+					}
+				%>
+
+			</table>
+
+			<br>
+
+			<table>
+				<tr>
+					<input type="submit" value="DELETE" name="operation">
+				</tr>
+			</table>
+
+		</center>
+	</form>
+</body>
+</html>
